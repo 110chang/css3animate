@@ -88,6 +88,8 @@ $('.myanimate').CSS3Animate({
 
 ## Methods
 
+### `CSS3Animate`
+
 ```javascript
 CSS3Animate([props], [duration], [easing], [callback])`
 ```
@@ -107,61 +109,61 @@ CSS3Animate('stop')
 ### `'delay'`
 
 ```javascript
-CSS3Animate('delay', [duration])`
+CSS3Animate('delay', [duration])
 ```
 
 ### `'fadeIn'`
 
 ```javascript
-CSS3Animate('fadeIn', [duration], [easing], [callback])`
+CSS3Animate('fadeIn', [duration], [easing], [callback])
 ```
 
 ### `'fadeOut'`
 
 ```javascript
-CSS3Animate('fadeOut', [duration], [easing], [callback])`
+CSS3Animate('fadeOut', [duration], [easing], [callback])
 ```
 
 ### `'fadeToggle'`
 
 ```javascript
-CSS3Animate('fadeToggle', [duration], [easing], [callback])`
+CSS3Animate('fadeToggle', [duration], [easing], [callback])
 ```
 
 ### `'hide'`
 
 ```javascript
-CSS3Animate('hide', [duration], [easing], [callback])`
+CSS3Animate('hide', [duration], [easing], [callback])
 ```
 
 ### `'show'`
 
 ```javascript
-CSS3Animate('show', [duration], [easing], [callback])`
+CSS3Animate('show', [duration], [easing], [callback])
 ```
 
 ### `'toggle'`
 
 ```javascript
-CSS3Animate('toggle', [duration], [easing], [callback])`
+CSS3Animate('toggle', [duration], [easing], [callback])
 ```
 
 ### `'slideDown'`
 
 ```javascript
-CSS3Animate('slideDown', [duration], [easing], [callback])`
+CSS3Animate('slideDown', [duration], [easing], [callback])
 ```
 
 ### `'slideUp'`
 
 ```javascript
-CSS3Animate('slideUp', [duration], [easing], [callback])`
+CSS3Animate('slideUp', [duration], [easing], [callback])
 ```
 
 ### `'slideToggle'`
 
 ```javascript
-CSS3Animate('slideToggle', [duration], [easing], [callback])`
+CSS3Animate('slideToggle', [duration], [easing], [callback])
 ```
 
 ## Supporting easing
