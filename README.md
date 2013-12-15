@@ -2,9 +2,10 @@
 
 jQuery.CSS3Animate is jQuery plugin that is intended for use as `jQuery.animate()`.
 
-[Sample page](http://110chang.com/css3animate/)(in Japanese)
+[Sample](http://110chang.com/css3animate/)(in Japanese)
 
-## Basic usage
+## Getting Started
+Include this script after jQuery. No need to write CSS.
 
 ```javascript
 $('.myanimate').CSS3Animate({
@@ -12,7 +13,10 @@ $('.myanimate').CSS3Animate({
   'background-color': '#FFCE73'
 }, 1000, 'easeInOutExpo');
 ```
-## Change default values before animation
+
+## Usage
+
+### Change default values before animation
 
 ```javascript
 $('.myanimate').CSS3Animate('config', {
@@ -24,7 +28,7 @@ $('.myanimate').CSS3Animate('config', {
 });
 ```
 
-## Callback calls after animation end
+### Callback calls after animation end
 
 ```javascript
 $('.myanimate').CSS3Animate({
@@ -35,7 +39,7 @@ $('.myanimate').CSS3Animate({
 });
 ```
 
-## Animate continuously
+### Animate continuously
 
 Animation queue is added to a stack, animations during playback are not stopped.
 
@@ -53,7 +57,7 @@ $('#btn-myanimate').toggle(function() {
 });
 ```
 
-## Stop animations during playback, overwrite animations
+### Stop animations during playback, overwrite animations
 
 Animation queue is cleared, animations during playback will be interrupted.
 
@@ -75,7 +79,7 @@ $('#btn-myanimate').toggle(function() {
 });
 ```
 
-## Use 2D transform
+### Use 2D transform
 
 ```javascript
 $('.myanimate').CSS3Animate({
@@ -88,85 +92,86 @@ $('.myanimate').CSS3Animate({
 });
 ```
 
-## Methods
+## API
 
 ### `CSS3Animate`
+Main function of this plugin.
 ```javascript
 CSS3Animate([props], [duration], [easing], [callback])
 ```
-Main function of this plugin.
+
 
 ### `'config'`
+Change default values. Currently, `easing` and `duration` can be set.
 ```javascript
 CSS3Animate('config', [options])
 ```
-Change default values. Currently, `easing` and `duration` can be set.
 
 ### `'stop'`
+Stop animations during playback, clear a queue stacked.
 ```javascript
 CSS3Animate('stop')
 ```
-Stop animations during playback, clear a queue stacked.
 
 ### `'delay'`
+Delay start of animations. It should not be used in conjunction with `stop`.
 ```javascript
 CSS3Animate('delay', [duration])
 ```
-Delay start of animations. It should not be used in conjunction with `stop`.
 
 ### `'fadeIn'`
+Alternative of `jQuery.fadeIn()` in CSS3.
 ```javascript
 CSS3Animate('fadeIn', [duration], [easing], [callback])
 ```
-Alternative of `jQuery.fadeIn()` in CSS3.
 
 ### `'fadeOut'`
+Alternative of `jQuery.fadeOut()` in CSS3.
 ```javascript
 CSS3Animate('fadeOut', [duration], [easing], [callback])
 ```
-Alternative of `jQuery.fadeOut()` in CSS3.
 
 ### `'fadeToggle'`
+Alternative of `jQuery.fadeToggle()` in CSS3.
 ```javascript
 CSS3Animate('fadeToggle', [duration], [easing], [callback])
 ```
-Alternative of `jQuery.fadeToggle()` in CSS3.
 
 ### `'hide'`
+Alternative of `jQuery.hide()` in CSS3.
 ```javascript
 CSS3Animate('hide', [duration], [easing], [callback])
 ```
-Alternative of `jQuery.hide()` in CSS3.
 
 ### `'show'`
+Alternative of `jQuery.show()` in CSS3.
 ```javascript
 CSS3Animate('show', [duration], [easing], [callback])
 ```
-Alternative of `jQuery.show()` in CSS3.
 
 ### `'toggle'`
+Alternative of `jQuery.toggle()` in CSS3.
 ```javascript
 CSS3Animate('toggle', [duration], [easing], [callback])
 ```
-Alternative of `jQuery.toggle()` in CSS3.
 
 ### `'slideDown'`
+Alternative of `jQuery.slideDown()` in CSS3.
 ```javascript
 CSS3Animate('slideDown', [duration], [easing], [callback])
 ```
-Alternative of `jQuery.slideDown()` in CSS3.
 
 ### `'slideUp'`
+Alternative of `jQuery.slideUp()` in CSS3.
 ```javascript
 CSS3Animate('slideUp', [duration], [easing], [callback])
 ```
-Alternative of `jQuery.slideUp()` in CSS3.
 
 ### `'slideToggle'`
+Alternative of `jQuery.slideToggle()` in CSS3.
 ```javascript
 CSS3Animate('slideToggle', [duration], [easing], [callback])
 ```
-Alternative of `jQuery.slideToggle()` in CSS3.
 
 ## Browser
 
